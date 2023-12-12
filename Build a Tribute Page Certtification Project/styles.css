@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box; /*for predictable sizing as padding and border are included*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    /*border: 1px solid red;*/      /*to make more visual when coding*/
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+#title {
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+#main {
+    padding: 1em 0 1em 0;
+}
+
+#main p {
+    text-align: center;
+}
+
+#img-div {   
+    margin: 0 10px;
+    padding: 10px 0 0 0;    
+    /*border: 1px solid blue;*/     /*to make more visual when coding*/
+    background-color: white;
+    font-size: 1.25em
+}
+
+#image {  
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+    object-fit: contain;
+
+}
+
+#img-caption {
+    text-align: center;
+    padding: 10px;
+}
+
+#tribute-info {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 2em 0 2em 0;
+}
+
+
+
+section {
+    /*border: 1px solid green;*/        /*to make more visual when coding*/
+    width: 60%;
+    margin: 0 auto 1em auto;    /*to center section left and right auto*/
+    font-size: 1.25em;
+}
+
+.timeline li {
+    margin: 1.125em 0 3em 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#tribute-link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    color: white;
+    background-color: blue;
+}
+
+section p.quote {
+    text-align: left !important;     /*important used to emphasize overide any other css*/
+    font-size: 1em !important;
+    font-style: italic;
+    margin: 0 1em;
+    padding: 5 em !important;
+}
