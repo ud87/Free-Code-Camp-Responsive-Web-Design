@@ -1,0 +1,221 @@
+* {
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+}
+
+/*set to allow correct positioning of "a tag"*/
+html {
+    scroll-padding-top: 27vh;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 16px;  /*1em*/
+    margin: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*fix the header section so it stays there when scrolling*/
+#header {
+    position: sticky;
+    top: 0;
+    background-color: white;  
+    height: 25vh;                   /*header height to allow correct positioning of "a tag"*/
+}
+
+#header-img {
+    display:block;
+    padding-top: 1rem;
+    max-width: 100%;   
+    height: 15vh;
+    margin: 0 auto;
+    object-fit: fit;
+}
+
+#nav-bar, .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 0.25rem;
+}
+
+
+h1 {
+    font-size: 1.25rem;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+/*for screen up to 700px*/
+@media only screen and (max-width: 700px){
+    #nav-bar, .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content:center;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        margin: 0.5rem auto;
+    }
+
+    .nav-links p {
+        margin: 0 auto;    
+    }
+}
+
+
+/*for screen up to 385 pixels */
+@media only screen and (max-width: 385px) {
+    /*set baseline scroll to position "a tag"*/
+    html {
+        scroll-padding-top: 45vh;
+    }
+
+    /*header height to allow correct positioning of "a tag" for vertical nav links*/
+    #header {
+        height: 40vh;                   
+    }
+
+    /*center the heading*/
+    h1 {
+        text-align: center;
+    }
+
+    /*change nav links to vertical*/
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-content:center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links p {
+        margin: 0.2rem auto;    
+    }
+}
+
+
+
+/*main section css styles*/
+main {
+    width: 70%;                 
+    margin: 0 auto;             /*centers main*/
+    overflow: hidden;
+}
+
+section {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+iframe {
+    display: block;
+    width: 70%;
+    height: 300px;
+    margin: 1rem auto;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+
+label, #submit {
+    display: block;
+    margin: 1rem 0 1rem 0;
+}
+
+#submit {
+    width: 20%;
+    height: 2rem;
+    background-color: rgb(0, 82, 133);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 420px){
+    #submit {
+        width: 40%;
+    }
+    
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.service {
+    border: 1px solid grey;
+    justify-items: center;
+    text-align:center;
+    border-radius: 0.5rem;
+}
+
+h3 {
+    font-size: 0.95rem;
+}
+
+ul {
+    padding-left: 0.25rem;
+}
+
+.service ul li {
+    text-align: left;
+    list-style: none;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/*for media screen up to 700px*/
+@media only screen and (max-width: 700px) {
+    /*change services class to columns for screens smaller than 700px*/
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5em;
+    }
+}
+
+
+footer {
+    background-color: lightgrey;
+    padding: 5% 5% 2.5% 5%;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+footer .social-icons a {
+    color:rgb(41, 133, 226);
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
