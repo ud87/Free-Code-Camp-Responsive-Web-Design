@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5ae89a4c0e.js" crossorigin="anonymous"></script> <!--font awesome script-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Udaya Portfolio Webpage</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav id="navbar-menu">
+            <a href="#welcome-section">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="welcome-section">
+            <div class="welcome-section-intro">
+                <h1>Hi,</h1>
+                <p>I am Udaya,</p>
+                <p class="title">a &ltWeb Developer/&gt</Web>
+                </p>
+            </div>
+            <div class="welcome-section-img">
+                <img src="https://i.postimg.cc/kGJ0Gjdv/self.jpg" alt="picture of author" />
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-tiles">
+                <div class="project-tile">
+                    <a target="_blank"
+                        href="https://ud87.github.io/Free-Code-Camp-Responsive-Web-Design/Build%20a%20Technical%20Documentation%20Page%20Certification%20Project/#Introduction"
+                        target="_blank">
+                        <img class="project-tile-image" src="https://i.postimg.cc/tChqYcPF/js-documentation.png"
+                            alt="js documentation">
+                        <h3>JS Documentation</h3>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://ud87.github.io/Free-Code-Camp-Responsive-Web-Design/Build%20a%20Tribute%20Page%20Certtification%20Project/"
+                        target="_blank">
+                        <img class="project-tile-image" src="https://i.postimg.cc/6pPtSNNJ/tribute-page.png"
+                            alt="tribute page">
+                        <h3>Tribute Page</h3>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://ud87.github.io/Free-Code-Camp-Responsive-Web-Design/Build_Survey_Form_Certification_Project/"
+                        target="_blank">
+                        <img class="project-tile-image" src="https://i.postimg.cc/85B4FN1q/survey-form.png"
+                            alt="survey form">
+                        <h3>Survey Form</h3>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://ud87.github.io/Tin-dog-static-site/" target="_blank">
+                        <img class="project-tile-image" src="https://i.postimg.cc/5NvBjfnp/tin-dog-static-site.png"
+                            alt="dog static site">
+                        <h3>Dog static site</h3>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://ud87.github.io/Free-Code-Camp-Responsive-Web-Design/Product%20Landing%20Page%20Certification%20project/"
+                        target="_blank">
+                        <img class="project-tile-image" src="https://i.postimg.cc/TPbWw0RS/product-landing-page.png"
+                            alt="product landing page">
+                        <h3>Product Landing Page</h3>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://ud87.github.io/Circle-area-perimeter-calculator/" target="_blank">
+                        <img class="project-tile-image" src='https://i.postimg.cc/d07Crn4w/circle-calculator.png'
+                            alt="circle calculator">
+                        <h3>JS Circle calculator</h3>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills / Certification</h2>
+            <div id="skills-tiles">
+                <a class="skill-tile" href="#"><i class="fa-brands fa-html5 fa-2xl" style="color: #ff4500;"></i></a>
+                <a class="skill-tile" href="#"><i class="fa-brands fa-css3-alt fa-2xl" style="color: #1e90f5;"></i></a>
+                <a class="skill-tile" href="#"><i class="fa-brands fa-bootstrap fa-2xl" style="color: #8a2be2;"></i></a>
+                <a class="skill-tile" href="#"><i class="fa-brands fa-react fa-2xl" style="color: #00bfff;"></i></a>
+                <a class="skill-tile" href="#"><i class="fa-solid fa-database fa-2xl" style="color: #00bfff;"></i></a>
+                <a class="skill-tile" href="#"><img src="https://i.postimg.cc/N0sWGJ7G/csharp.png"
+                        alt="c# logo"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2 class="contact-header">Contact Me</h2>
+            <div class="profile-links">
+                <a id="profile-link" href="https://www.linkedin.com/in/udaya-rai-23aa7337/" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-3x" style="color: #000000;"></i></a>
+                <a id="profile-link" href="https://github.com/ud87" target="_blank"><i class="fa-brands fa-github fa-3x"
+                        style="color: #000000;"></i></a>
+                <a id="profile-link" href="mailto:udayarai@hotmail.co.uk"><i class="fa-solid fa-envelope fa-3x"
+                        style="color: #000000;"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        // Get the total height of the header and set margin-top for the main element
+        window.addEventListener('load', function () {
+            var headerHeight = document.getElementById('navbar').offsetHeight;
+            document.getElementById('main-content').style.marginTop = headerHeight + 'px';
+        });
+
+        // You might also want to recalculate the margin if the window is resized
+        window.addEventListener('resize', function () {
+            var headerHeight = document.getElementById('navbar').offsetHeight;
+            document.getElementById('main-content').style.marginTop = headerHeight + 'px';
+        });
+    </script>
+</body>
+
+</html>
